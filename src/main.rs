@@ -6,7 +6,7 @@ async fn index() -> impl Responder {
     HttpResponse::Ok().body("Hello, world!")
 }
 
-static ADDRESS: &str = "127.0.0.1:8080";
+static ADDRESS: &str = "0.0.0.0:8080";
 
 #[tokio::main]
 async fn main() -> std::io::Result<()> {
